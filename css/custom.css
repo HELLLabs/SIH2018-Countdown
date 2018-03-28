@@ -1,0 +1,136 @@
+.container {
+    /* overflow: hidden; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+.row {
+    margin-top: 2%;
+}
+
+
+.timings {
+    font-size: 20.0rem;
+    line-height: 1.2;
+    letter-spacing: -.1rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-weight: 800;
+}
+
+.hours {
+    font-size: 5.0rem;
+    line-height: 1.2;
+    letter-spacing: -.1rem;
+    margin-top: 0;
+    margin-bottom: 4rem;
+    font-weight: 300;
+}
+
+h5 {
+    margin-bottom: 1rem;
+    color: rgba(0, 0, 0, .5);
+}
+
+.timer {
+    padding-bottom: 4rem;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+.main-timer {
+    border: 2px solid rgba(0, 0, 0, .2);
+    margin-top: 2%;
+    border-radius: 20rem;
+}
+
+.main-timer > h5 {
+    width: 20%;
+    position: relative;
+    margin: 0 auto;
+    top: -20px;
+    background-color: white;
+}
+
+.column {
+    margin-left: 0;
+}
+
+.logo {
+    position: relative;
+}
+
+.logo img {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0);
+}
+
+.pre-footer {
+    margin-top: 4rem;
+    font-size: 4rem;
+    margin-bottom: 15rem;
+    color: #38657F;
+}
+
+.vBorder {
+    border-right: 1px solid #3382A9;
+}
+
+footer {
+    font-size: 3rem;
+    text-transform: uppercase;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #76B042;
+    padding: 3rem 0;
+    color: white;
+    /* border-top: 2px solid #0D7D41; */
+
+}
+
+.notification {
+    font-weight: bolder;
+}
+/*
+#event-name, #time-left {
+    font-weight: bolder;
+} */
+
+#event-name {
+    border-radius: 5px;
+    background-color: #0D7D41;
+    padding: .3rem 1.2rem;
+}
