@@ -34,6 +34,8 @@ var introText = document.getElementById('intro-text');
 var timeLeft = document.getElementById('time-left');
 var eventName = document.getElementById('event-name');
 var timeUnits = document.getElementById('time-units');
+var currentDate = document.getElementById('date');
+var currentTime = document.getElementById('time');
 var alert = document.getElementById('alert');
 var foot = document.getElementById('foot');
 
