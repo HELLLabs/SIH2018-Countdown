@@ -11,7 +11,6 @@
     margin-top: 2%;
 }
 
-
 .timings {
     font-size: 20.0rem;
     line-height: 1.2;
@@ -71,6 +70,8 @@ h5 {
     border: 2px solid rgba(0, 0, 0, .2);
     margin-top: 2%;
     border-radius: 20rem;
+    transform: translate(-10%, 0);
+    width: 120%;
 }
 
 .main-timer > h5 {

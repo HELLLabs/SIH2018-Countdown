@@ -1,29 +1,29 @@
 
 var SCHEDULE = [
-    [new Date('Fri Mar 30 2018 8:30:00'),'Hacking/Coding begings'],
+    [new Date('Fri Mar 30 2018 8:30:00'),'Hacking begins'],
     [new Date('Fri Mar 30 2018 10:10:00'),'Tea & snacks'],
     [new Date('Fri Mar 30 2018 11:30:00'),'First Round of Training session'],
     [new Date('Fri Mar 30 2018 13:00:00'),'Lunch'],
-    [new Date('Fri Mar 30 2018 14:00:00'),'Hack continues'],
+    [new Date('Fri Mar 30 2018 14:00:00'),'Hacking Time'],
     [new Date('Fri Mar 30 2018 16:30:00'),'Tea & snacks'],
-    [new Date('Fri Mar 30 2018 17:00:00'),'Hack continue'],
+    [new Date('Fri Mar 30 2018 17:00:00'),'Hack Time'],
     [new Date('Fri Mar 30 2018 19:00:00'),'First round of evaluation'],
     [new Date('Fri Mar 30 2018 20:30:00'),'Dinner'],
-    [new Date('Fri Mar 30 2018 21:00:00'),'Hack continue'],
+    [new Date('Fri Mar 30 2018 21:00:00'),'Hack Time'],
     [new Date('Fri Mar 30 2018 23:00:00'),'Mid night energy drink'],
     [new Date('Sat Mar 31 2018 00:00:00'),'Second round of training'],
     [new Date('Sat Mar 31 2018 1:00:00'),'Recreational Activity'],
-    [new Date('Sat Mar 31 2018 1:30:00'),'Hacking continues'],
-    [new Date('Sat Mar 31 2018 3:00:00'),'Snacks time'],
+    [new Date('Sat Mar 31 2018 1:30:00'),'Hacking Time'],
+    [new Date('Sat Mar 31 2018 3:00:00'),'Snacks Time'],
     [new Date('Sat Mar 31 2018 6:00:00'),'Yoga session'],
-    [new Date('Sat Mar 31 2018 6:30:00'),'Breakfast served'],
+    [new Date('Sat Mar 31 2018 6:30:00'),'Breakfast Time'],
     [new Date('Sat Mar 31 2018 9:00:00'),'Second round of evaluation'],
     [new Date('Sat Mar 31 2018 10:00:00'),'Tea and snacks'],
     [new Date('Sat Mar 31 2018 12:00:00'),'Power mentoring'],
     [new Date('Sat Mar 31 2018 12:45:00'),'Lunch'],
-    [new Date('Sat Mar 31 2018 13:30:00'),'Hack continues'],
+    [new Date('Sat Mar 31 2018 13:30:00'),'Hacking time'],
     [new Date('Sat Mar 31 2018 16:30:00'),'tea and snacks'],
-    [new Date('Sat Mar 31 2018 18:00:00'),'hack stops']
+    [new Date('Sat Mar 31 2018 18:00:00'),'Hackathon concluding']
 ]
 
 var ptime = pTime.getTime();
@@ -74,7 +74,7 @@ function manageEvent() {
             eventName.innerHTML = SCHEDULE[i][1];
             var eventTime = parseInt((SCHEDULE[i][0].getTime() - ptime + (1000 * 60))/(1000 * 60));
             timeLeft.innerHTML = `in ${eventTime}`;
-            alert.innerHTML = 'Alert:';
+            alert.innerHTML = 'Alert: ';
             timeUnits.innerHTML = 'minutes!';
         }else{
             eventName.innerHTML = SCHEDULE[i][1];
