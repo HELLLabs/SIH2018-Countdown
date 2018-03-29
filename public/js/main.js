@@ -68,16 +68,14 @@ function manageEvent() {
             i++;
         }
         if(((SCHEDULE[i][0].getTime()-ptime)>0)&&((SCHEDULE[i][0].getTime()-ptime)<=15*60*1000)){
-
-
-
             eventName.innerHTML = SCHEDULE[i][1];
             var eventTime = parseInt((SCHEDULE[i][0].getTime() - ptime + (1000 * 60))/(1000 * 60));
             timeLeft.innerHTML = `in ${eventTime}`;
             alert.innerHTML = 'Alert: ';
             timeUnits.innerHTML = 'minutes!';
         }else{
-            eventName.innerHTML = SCHEDULE[i][1];
+            // eventName.innerHTML = SCHEDULE[i][1];
+            eventName.innerHTML = 'Hackathon commencing soon!';
             timeLeft.innerHTML = ``;
             timeUnits.innerHTML = '';
             timeUnits.innerHTML = '';
