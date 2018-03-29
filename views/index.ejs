@@ -15,6 +15,20 @@
 
 </head>
 <body>
+  <!-- some random svg filters for experiment purpose  -->
+  <!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="blur-contrast">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="contrast" />
+      </filter>
+      <filter id="blur-contrast-composite">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="contrast" />
+        <feComposite in="SourceGraphic" in2="contrast" operator="atop" />
+      </filter>
+    </defs>
+  </svg> -->
   <div class="container">
     <div class="row">
       <div class="logo">
@@ -33,6 +47,10 @@
       <div class="four columns u-pull-right"><i class="ion-android-time"></i>&nbsp;<span id="time">12:42 PM</span></div>
     </div>
     <footer class="center" id="foot" >
+      <div class="slingy">
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
       <span class="notification" id="alert"></span><span id="event-name">loading</span>
       <span id="time-left"></span>&nbsp;<span id="time-units"></span>
     </footer>

@@ -107,6 +107,21 @@ h5 {
 .vBorder {
     border-right: 1px solid #3382A9;
 }
+/* some testing decorations for footer, will use later ;) */
+/* .slingy {
+  -webkit-filter: url("#blur-contrast-composite");
+          filter: url("#blur-contrast-composite");
+    position: absolute;
+    bottom: 0;
+    transform: translate(-1rem, 0);
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background: #76B042;
+} */
 
 footer {
     font-size: 3rem;
@@ -116,9 +131,11 @@ footer {
     bottom: 0;
     width: 100%;
     background-color: #76B042;
-    padding: 3rem 0;
+    padding: 4rem 0;
     color: white;
     /* border-top: 2px solid #0D7D41; */
+    border-top-right-radius: 50% 70%;
+    border-top-left-radius: 50% 70%;
 
 }
 
