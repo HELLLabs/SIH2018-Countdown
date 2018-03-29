@@ -41,6 +41,22 @@ var alert = document.getElementById('alert');
 var foot = document.getElementById('foot');
 
 function timer() {
+    var cDate = new Date(ptime);
+    var hr = cDate.getHours();
+    var min = cDate.getMinutes();
+    var amPM = (hr > 11) ? "PM" : "AM";
+    if (hr > 12) {
+        hr -= 12;
+    } else if (hr == 0) {
+        hr = "12";
+    }
+    if (min < 10) {
+        min = "0" + min;
+    }
+    // console.log(hr, min)
+    var date = cDate.toDateString().split(' ');
+    currentTime.innerHTML = `${hr}:${min} ${amPM}`;
+    currentDate.innerHTML = `${date[1]} ${date[2]}, ${date[3]}`;
 
     if(ptime < START.getTime()) {
         var netTime = START.getTime() - ptime + (1000 * 60);
@@ -67,7 +83,7 @@ var notfs = 0;
 function manageEvent() {
 
     if(i < SCHEDULE.length){
-        console.log(parseInt((SCHEDULE[i+1][0].getTime()-ptime)/(1000 * 60)));
+        // console.log(parseInt((SCHEDULE[i+1][0].getTime()-ptime)/(1000 * 60)));
         if((SCHEDULE[i+1][0].getTime()-ptime)<=15*60*1000){
             i++;
         }
