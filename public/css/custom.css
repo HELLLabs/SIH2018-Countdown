@@ -3,6 +3,8 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+* {cursor: none;}
+
 .center {
     text-align: center;
 }
