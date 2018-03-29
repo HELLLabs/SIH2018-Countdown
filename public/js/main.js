@@ -3,25 +3,25 @@ var SCHEDULE = [
     [new Date('Fri Mar 30 2018 10:00:00'), 'Tea & snacks'],
     [new Date('Fri Mar 30 2018 11:30:00'), 'First Round of Training session'],
     [new Date('Fri Mar 30 2018 13:00:00'), 'Lunch'],
-    [new Date('Fri Mar 30 2018 14:00:00'), 'Hacking resume'],
+    [new Date('Fri Mar 30 2018 14:00:00'), 'Hacking Time'],
     [new Date('Fri Mar 30 2018 16:30:00'), 'Tea & snacks'],
-    [new Date('Fri Mar 30 2018 17:00:00'), 'Hacking resume'],
+    [new Date('Fri Mar 30 2018 17:00:00'), 'Hacking Time'],
     [new Date('Fri Mar 30 2018 18:00:00'), 'First Round of Evaluation'],
-    [new Date('Fri Mar 30 2018 19:30:00'), 'Hacking resume'],
+    [new Date('Fri Mar 30 2018 19:30:00'), 'Hacking Time'],
     [new Date('Fri Mar 30 2018 20:00:00'), 'Address by hon. P.M.'],
     [new Date('Fri Mar 30 2018 20:30:00'), 'Dinner'],
-    [new Date('Fri Mar 30 2018 21:30:00'), 'Hacking resume'],
+    [new Date('Fri Mar 30 2018 21:30:00'), 'Hacking Time'],
     [new Date('Fri Mar 31 2018 00:00:00'), 'Second Round of Training session'],
-    [new Date('Fri Mar 31 2018 01:00:00'), 'Activity'],
-    [new Date('Fri Mar 31 2018 01:30:00'), 'Hacking resume'],
-    [new Date('Fri Mar 31 2018 06:00:00'), 'Yoga'],
-    [new Date('Fri Mar 31 2018 06:30:00'), 'Break fast'],
-    [new Date('Fri Mar 31 2018 07:30:00'), 'Hacking resume'],
+    [new Date('Fri Mar 31 2018 01:00:00'), 'Recreational Activity'],
+    [new Date('Fri Mar 31 2018 01:30:00'), 'Hacking Time'],
+    [new Date('Fri Mar 31 2018 06:00:00'), 'Yoga session'],
+    [new Date('Fri Mar 31 2018 06:30:00'), 'Breakfast'],
+    [new Date('Fri Mar 31 2018 07:30:00'), 'Hacking Time'],
     [new Date('Fri Mar 31 2018 09:00:00'), 'Second Round of Evaluation'],
-    [new Date('Fri Mar 31 2018 10:30:00'), 'Hacking resume'],
+    [new Date('Fri Mar 31 2018 10:30:00'), 'Hacking Time'],
     [new Date('Fri Mar 31 2018 12:00:00'), 'Power monitoring'],
     [new Date('Fri Mar 31 2018 12:45:00'), 'Lunch'],
-    [new Date('Fri Mar 31 2018 13:30:00'), 'Hacking resume'],
+    [new Date('Fri Mar 31 2018 13:30:00'), 'Hacking Time'],
     [new Date('Sat Mar 31 2018 15:00:00'), 'Hackathon concluding']
 ];
 
@@ -86,14 +86,14 @@ var notfs = 0;
 function manageEvent() {
     if (ptime <= START.getTime() - 10*60*1000) {
         eventName.innerHTML = 'Hackathon commencing soon';
-        timeLeft.innerHTML = ``;
+        timeLeft.innerHTML = '';
         timeUnits.innerHTML = '';
         timeUnits.innerHTML = '';
         alert.innerHTML = '';
     }
     else if(ptime > END.getTime())
     {
-        eventName.innerHTML = 'Hackathon concludedes';
+        eventName.innerHTML = 'Hackathon concludes';
         timeLeft.innerHTML = '';
         timeUnits.innerHTML = '';
         timeUnits.innerHTML = '';
