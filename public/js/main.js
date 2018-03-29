@@ -1,5 +1,6 @@
 
 var SCHEDULE = [
+    [new Date('Fri Mar 30 2018 8:15:00'), 'Hackathon commencing soon'],
     [new Date('Fri Mar 30 2018 8:30:00'),'Hacking begins'],
     [new Date('Fri Mar 30 2018 10:10:00'),'Tea & snacks'],
     [new Date('Fri Mar 30 2018 11:30:00'),'First Round of Training session'],
@@ -62,6 +63,7 @@ function timer() {
 }
 
 var i=0;
+var notfs = 0;
 function manageEvent() {
 
     if(i < SCHEDULE.length){
@@ -70,14 +72,22 @@ function manageEvent() {
             i++;
         }
         if(((SCHEDULE[i][0].getTime()-ptime)>0)&&((SCHEDULE[i][0].getTime()-ptime)<=15*60*1000)){
+            if (notfs == 0){
+                document.getElementById('foot').style.background = '#F69324';
+                notfs++;
+            }
             eventName.innerHTML = SCHEDULE[i][1];
             var eventTime = parseInt((SCHEDULE[i][0].getTime() - ptime + (1000 * 60))/(1000 * 60));
             timeLeft.innerHTML = `in ${eventTime}`;
             alert.innerHTML = 'Alert: ';
             timeUnits.innerHTML = 'minutes!';
         }else{
-            // eventName.innerHTML = SCHEDULE[i][1];
-            eventName.innerHTML = 'Hackathon commencing soon!';
+            eventName.innerHTML = SCHEDULE[i][1];
+            if (notfs > 0){
+                document.getElementById('foot').style.background = '#F69324';
+                notfs = 0
+            }
+            // eventName.innerHTML = 'Hackathon commencing soon!';
             timeLeft.innerHTML = ``;
             timeUnits.innerHTML = '';
             timeUnits.innerHTML = '';
