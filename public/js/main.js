@@ -141,3 +141,12 @@ function main() {
 }
 
 setInterval(main, 1000);
+
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function () {
+        var newDate = new Date();
+        ptime = newDate.getTime();
+    }, 2000);
+
+});
+
