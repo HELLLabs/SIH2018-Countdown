@@ -3,7 +3,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-* {cursor: none;}
+/* * {cursor: none;} */
 
 .center {
     text-align: center;
@@ -94,7 +94,7 @@ h5 {
 
 .logo img {
     position: relative;
-    left: 50%;
+    left: 37%;
     right: 50%;
     transform: translate(-50%, 0);
 }
@@ -153,4 +153,16 @@ footer {
     border-radius: 5px;
     background-color: #0D7D41;
     padding: .3rem 1.2rem;
+}
+
+.niet_logo{
+    height: 102px;
+    width: 102px;
+    transform: translate(0, 0) !important;
+}
+
+.aicte_logo {
+    height: 102px;
+    width: 102px;
+    transform: translate(-100%, 0) !important;
 }
